@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<title>Havells | Dashboard</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/vnd.microsoft.icon"/>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="css/responsive.dataTables.min.css" rel="stylesheet">
+<link href="css/scrollbar.css" type="text/css" rel="stylesheet">
+<link href="css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<!--<link href="fontawesome/css/all.css" type="text/css" rel="stylesheet">-->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="js/scrollbar.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="fontawesome/js/all.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<script >
+    $(function () {
+        $('.datepicker').datepicker({
+            format: "dd/mm/yyyy",
+            autoclose: true,
+            todayHighlight: true
+        });
+    });
+</script>
+
+<script type="text/javascript">
+$(window).load(function(){
+ $(".box-scroll").mCustomScrollbar({
+	 scrollInertia:150
+	 });				
+});
+
+</script>
+</head>
+<body>
+<!--[Header]-->
+<header id="header">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="index.html"><img src="images/logo-havells.png"></a>
+			
+			<div class="collapse navbar-collapse d-flex justify-content-end top-menu">
+				<ul class="navbar-nav">
+				  
+				  <li class="nav-item">
+					<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="btn-white rounded-circle"><i class="fas fa-user"></i></span> Sagar Pushkarna</a>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				  </div>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#"><i class="fas fa-power-off"></i></a>
+				  </li>
+				</ul>
+			  </div>
+		</nav>
+	</div>
+</header>
+<!--[/Header]-->
+<!--[Dashboard]-->
+<nav class="tabs-nave">
+  <div class="nav nav-tabs">
+    <a class="nav-item nav-link active" href="index.html"><i class="icon projects-icon"></i> Projects</a>
+    <a class="nav-item nav-link" href="time-track-list.html"><i class="icon time-track-list-icon"></i> Time Track List</a>
+    <a class="nav-item nav-link" href="time-track-approval.html"><i class="icon time-track-approval-icon"></i> Time Track Approval</a>
+  </div>
+</nav>
+
+<section class="container-fluid">
+	<div class="contant-box">
+		<div class="row align-items-center">
+					<div class="col-md-8">
+						<header class="header-title">
+							<h2 class="title">Project</h2>
+						</header>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+								<div class="input-group-append">
+								  <button class="btn btn-search btn-gray" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="table-responsive" style="height:400px;">
+					<table class="table list-table table-bordered">
+						<thead>
+							<tr>
+								<th>Project Name</th>
+								<th>Solution Manager</th>
+								<th>Delivery Manager</th>
+								<th>Department</th>
+								<th>Created by</th>
+								<th>Date on</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Havells Project Tracker</td>
+								<td>Manmeet Nagar</td>
+								<td>Abhishek Mishra</td>
+								<td>Havells IT</td>
+								<td>Abhishek Mishra</td>
+								<td>13/06/2019</td>
+								<td>
+									<a href="manage.html" class="btn btn-gay-border rounded-pill"><i class="fas fa-pencil-alt"></i> Manage</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+	</div>
+</section>
+<!--[/Dashboard]-->
+</body>
+</html>
